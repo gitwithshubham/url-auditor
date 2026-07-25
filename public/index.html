@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>URL Auditor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>🔍 URL Auditor</h1>
+      <p class="subtitle">Enter any URL to get an instant health &amp; SEO report.</p>
+    </header>
+
+    <form id="audit-form" class="audit-form">
+      <input
+        type="text"
+        id="url-input"
+        name="url"
+        placeholder="e.g. example.com or https://example.com"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="submit-btn">Audit</button>
+    </form>
+
+    <div id="status" class="status" aria-live="polite"></div>
+
+    <section id="report" class="report hidden"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
